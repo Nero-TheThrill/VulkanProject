@@ -36,7 +36,7 @@ private:
     bool checkValidationLayerSupport();
     void checkExtensionSupport();
     std::vector<const char*> getRequiredExtensions();
-
+    void setupDebugMessenger();
     static VKAPI_ATTR VkBool32 VKAPI_CALL debugCallback(
         VkDebugUtilsMessageSeverityFlagBitsEXT messageSeverity,
         VkDebugUtilsMessageTypeFlagsEXT messageType,
